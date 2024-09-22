@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# If you are using Django with PostgreSQL:
+*.pgsql
+
+# Ignore migrations
+**/migrations/*
+
+# Static files
+staticfiles/
+static/
+
+# Media files
+media/
+
+# Django specific: Secret key, settings that are environment-specific
+.env
+
+# Ignore virtual environments:
+venv/
+env/
+ENV/
+
+# VS Code configuration files (if you are using it):
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS file
+.DS_Store
+
+# Python egg metadata
+*.egg-info/
+*.eggs/
+dist/
+build/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage/
