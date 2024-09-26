@@ -29,9 +29,8 @@ def classify_email(request):
 
             # Predict using the loaded model
             prediction = model.predict(email_tfidf)
-
             # Convert prediction to readable label
-            label = 'phishing' if prediction[0] == 0 else 'legitimate'
+            label = 'legitimate' if prediction[0] == 0 else 'phishing'
 
             # Save the email and classification in the database
             classification_instance = EmailClassification.objects.create(
